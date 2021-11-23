@@ -4,8 +4,8 @@
 #define XSHUT_PIN 3
 Adafruit_VL53L1X vl53 = Adafruit_VL53L1X(XSHUT_PIN, IRQ_PIN);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-
 void setup() {
+  pinMode(4,INPUT);
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0,0);
@@ -28,7 +28,9 @@ void loop() {
     if(distance==-1) {
       lcd.print("error");
     }
-    lcd.print(((String)distance)+"mm");
+    lcd.print((String)distance+"MM  "+(String)(distance/10.0)+"CM  ");
+    lcd.setCursor(0,1);
+    lcd.print((String)(distance/1000.0)+"M  ");
     vl53.clearInterrupt();
     delay(1000);
   }
