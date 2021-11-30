@@ -35,10 +35,18 @@ void loop() {
     lcd.setCursor(0,1);
     lcd.print((String)(distance/1000.0)+"M  ");
     CN++;
-    if(CN == 13){
+    if(CN%13 == 0){
       tone(piezo,784);
       delay(500);
       noTone(piezo);
+      lcd.clear();
+      lcd.print((String)distance+"MM  "+(String)(distance/10.0)+"CM  ");
+      lcd.setCursor(0,1);
+      lcd.print((String)(distance/1000.0)+"M  Complete");
+      delay(2000);
+    }
+    if(CN>=525){
+      CN = 0;
     }
     vl53.clearInterrupt();
     delay(1000);
