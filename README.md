@@ -19,3 +19,14 @@
 레이저 포인터로 내가 지금 어디를 측정하고 있는지를 보여준다.
 기대효과 : 자로 잴 수 없는 것들을 보다 효과적으로 길이를 알 수 있다.
 ![image](https://user-images.githubusercontent.com/80656700/208301592-9195b68b-f5fe-4cf9-9636-a4e61f58c24e.png)
+
+사용 모듈
+---
+> <a  href="https://www.devicemart.co.kr/goods/view?no=1329650">링크</a>
+> ![image](https://user-images.githubusercontent.com/80656700/234747897-fabfd700-b3a9-43f3-aa02-138e449ad5a5.png)
+
+> <a href="https://www.devicemart.co.kr/goods/view?no=1385533">링크2</a>
+> ![image](https://user-images.githubusercontent.com/80656700/234748159-8daab87a-f924-497d-b7a7-30d958bc2632.png)
+
+## 설 계 도 !
+> ![image](https://user-images.githubusercontent.com/80656700/234748288-684c3ece-1438-47e0-b466-41347d98080b.png)
